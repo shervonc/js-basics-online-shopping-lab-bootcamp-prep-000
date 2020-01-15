@@ -67,9 +67,9 @@ function placeOrder(cardNumber) {
  const Total = total()
  if (cardNumber !== undefined) {
      return `Your total cost is $${Total}, which will be charged to the card ${cardNumber}.`
-   for (var i = cart.length; i>= 0; i--)
+   for (var i = cart.length; i>= 0; i--) {
      cart.pop();
-
+}
  } else {
    return "Sorry, we don't have a credit card on file for you."
 
